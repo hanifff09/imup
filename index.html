@@ -358,28 +358,31 @@
                 <div class="shape"></div>
             </div>
             <div class="hero-content">
-                <h1>TUGAS</h1>
-                <p>Kelompok satu imup</p>
-                <a href="#layanan" class="cta-button">imup imup imup</a>
+                <h1>KELOMPOK SATU</h1>
+                <p>imup imup imup</p>
+                <a href="#layanan" class="cta-button">Tugas Tugas</a>
             </div>
         </section>
 
         <section class="section">
             <div class="features fade-in" id="layanan">
-                <h2>Tugas tugas</h2>
+                <h2>Tugas Tugas</h2>
                 <div class="feature-grid">
                     <div class="feature-card">
                         <span class="feature-icon">📖</span>
                         <h3>Bahasa Indonesia</h3>
-                        <a
-                            href="https://www.canva.com/design/DAGyQqOHnrI/Yxb5N28DGMXYWuEyD-t6qg/edit?utm_content=DAGyQqOHnrI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" style="color: #ffffff;">PPT
+                        <a href="https://www.canva.com/design/DAGyQqOHnrI/Yxb5N28DGMXYWuEyD-t6qg/edit?utm_content=DAGyQqOHnrI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                            style="color: #ffffff;">PPT
                             BAHASA INDONESIA
                         </a>
                     </div>
                     <div class="feature-card">
                         <span class="feature-icon">🦅</span>
                         <h3>Pancasila</h3>
-                        <p>Cooming soon</p>
+                        <a href="https://www.canva.com/design/DAGyT44qIJA/U5xjRwZyZkd_ggLjLZ036A/edit?utm_content=DAGyT44qIJA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                            style="color: #ffffff;">
+                            PPT PANCASILA
+                        </a>
                     </div>
                     <!-- <div class="feature-card">
                         <span class="feature-icon">📱</span>
@@ -577,6 +580,10 @@
             color: white;
             position: relative;
             overflow: hidden;
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
 
         .hero::before {
@@ -593,6 +600,24 @@
                     rgba(255, 255, 255, 0.03) 4px);
             animation: float 20s ease-in-out infinite;
         }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            /* overlay hitam transparan */
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
 
         @keyframes float {
 
@@ -819,7 +844,6 @@
             opacity: 1;
             transform: translateY(0);
         }
-
     </style>
 </head>
 
